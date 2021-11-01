@@ -19,8 +19,16 @@ public class CadastroDeContas {
         if (contaCorrente.isEmpty()) {
             return null;
         }
-
         return contaCorrente.get(numeroConta);
+    }
+
+    public Double valorTotalContas(){
+        Double soma = 0.0;
+
+        for(int cont = 0; cont < contaCorrente.size(); cont++){
+            return soma += contaCorrente.get(cont).getSaldo();
+        }
+        return soma;
     }
 
     public ArrayList<ContaCorrente> getContaCorrente() {
