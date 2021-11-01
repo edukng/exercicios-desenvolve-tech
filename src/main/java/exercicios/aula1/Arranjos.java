@@ -1,6 +1,8 @@
 package exercicios.aula1;
 
-public class Application {
+import java.util.Arrays;
+
+public class Arranjos {
     private static int [] primeiroArranjoInteiros;
     private static int [] segundoArranjoInteiros;
 
