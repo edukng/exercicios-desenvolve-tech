@@ -1,6 +1,6 @@
 package exercicios.logica;
 
-public class PrimeiraClasse {
+public class Lab {
     private String nome = "Eduardo da Rosa Kolling";
 
     public String getNome() {

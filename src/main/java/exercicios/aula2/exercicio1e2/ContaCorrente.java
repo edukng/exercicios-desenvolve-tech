@@ -1,4 +1,4 @@
-package exercicios.aula2;
+package exercicios.aula2.exercicio1e2;
 
 public class ContaCorrente {
 

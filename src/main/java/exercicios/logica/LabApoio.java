@@ -1,7 +1,7 @@
 package exercicios.logica;
 
-public class SegundaClasse {
-    private static final PrimeiraClasse teste = new PrimeiraClasse();
+public class LabApoio {
+    private static final Lab teste = new Lab();
     private static String nome = "Eduardo da Rosa";
 
 
