@@ -1,4 +1,4 @@
-package exercicios.logica;
+package exercicios.estudos;
 
 public class Lab {
     private String nome = "Eduardo da Rosa Kolling";

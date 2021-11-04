@@ -1,4 +1,4 @@
-package exercicios.aula2.exercicio3;
+package exercicios.classes.exercicio3;
 
 public enum Genero {
     FEMININO,

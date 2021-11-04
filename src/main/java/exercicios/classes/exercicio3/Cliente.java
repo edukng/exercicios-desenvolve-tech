@@ -1,4 +1,4 @@
-package exercicios.aula2.exercicio3;
+package exercicios.classes.exercicio3;
 
 public class Cliente {
     private String cpf;
@@ -7,6 +7,7 @@ public class Cliente {
 
     public Cliente(String cpf, Genero genero) {
         this.cpf = cpf;
+        this.genero = genero;
     }
 
     public String getCpf() {
@@ -19,5 +20,9 @@ public class Cliente {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public Genero getGenero() {
+        return genero;
     }
 }

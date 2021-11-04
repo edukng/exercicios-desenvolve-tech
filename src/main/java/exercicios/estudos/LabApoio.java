@@ -1,4 +1,4 @@
-package exercicios.logica;
+package exercicios.estudos;
 
 public class LabApoio {
     private static final Lab teste = new Lab();

@@ -1,4 +1,4 @@
-package exercicios.aula2.exercicio3;
+package exercicios.classes.exercicio3;
 
 import java.util.ArrayList;
 
@@ -17,11 +17,11 @@ public class Bares {
         return clientes.contains(clienteParametro);
     }
 
-    public int porcentagemGenero(Cliente generosParametro){
+    public long porcentagemGenero(Genero clienteGenero){
         int total = clientes.size();
+        long fequency = clientes.stream().filter(gearInput -> gearInput.getGenero().equals(Genero.FEMININO)).count();
 
-        if (clientes.contains(generosParametro)) {
 
-        }
+        return total;
     }
 }
