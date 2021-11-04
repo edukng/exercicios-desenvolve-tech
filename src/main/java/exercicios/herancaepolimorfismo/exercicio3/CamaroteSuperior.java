@@ -6,7 +6,10 @@ public class CamaroteSuperior extends Vip{
     private final BigDecimal taxaSuperior = new BigDecimal("100.00");
     private final String localizacao = "Camarote inferior";
 
-    public void imprime(){
+    public void imprimeTipoIngresso(){
+        System.out.println("Ingresso normal");
+    }
+    public void imprimeLocalizacao(){
         System.out.println("Localização: " + localizacao);
     }
 

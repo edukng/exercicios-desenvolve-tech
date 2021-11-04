@@ -5,8 +5,7 @@ import java.math.BigDecimal;
 public class Ingresso {
     private final BigDecimal valorIngresso = new BigDecimal("100.00");
 
-    public void imprimeValor(BigDecimal valorParametro){
-        //System.out.println("Valor do ingresso" + valorParametro);
+    public void imprimeValor(){
     }
 
     public BigDecimal getValorIngresso() {
