@@ -1,6 +1,6 @@
 package com.desenvolve.tech;
 
-import exercicios.extras.StringRepetida;
+import com.desenvolve.tech.exercicios.base.extras.StringRepetida;
 
 public class StringRepetidaTeste {
     private static StringRepetida stringDeTeste = new StringRepetida();

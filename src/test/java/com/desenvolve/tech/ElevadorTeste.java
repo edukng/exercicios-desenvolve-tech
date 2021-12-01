@@ -1,6 +1,6 @@
 package com.desenvolve.tech;
 
-import exercicios.extras.Elevador;
+import com.desenvolve.tech.exercicios.base.extras.Elevador;
 
 public class ElevadorTeste {
     private static Elevador atlas = new Elevador();

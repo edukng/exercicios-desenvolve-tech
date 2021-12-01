@@ -1,6 +1,6 @@
 package com.desenvolve.tech;
 
-import exercicios.extras.ConcatenaString;
+import com.desenvolve.tech.exercicios.base.extras.ConcatenaString;
 
 public class ConcatenaTeste {
     private static ConcatenaString stringDeTeste = new ConcatenaString();

@@ -1,7 +1,7 @@
 package com.desenvolve.tech;
 
-import exercicios.classes.exercicio1e2.CadastroDeContas;
-import exercicios.classes.exercicio1e2.ContaCorrente;
+import com.desenvolve.tech.exercicios.base.classes.exercicio1e2.CadastroDeContas;
+import com.desenvolve.tech.exercicios.base.classes.exercicio1e2.ContaCorrente;
 
 public class CadastroDeContasTeste {
 

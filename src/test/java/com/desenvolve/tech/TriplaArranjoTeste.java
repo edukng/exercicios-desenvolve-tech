@@ -1,6 +1,6 @@
 package com.desenvolve.tech;
 
-import exercicios.extras.TriplaArranjo;
+import com.desenvolve.tech.exercicios.base.extras.TriplaArranjo;
 
 public class TriplaArranjoTeste {
     public static void main(String[] args) {

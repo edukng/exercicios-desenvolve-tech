@@ -1,8 +1,7 @@
 package com.desenvolve.tech;
 
-import exercicios.herancaepolimorfismo.exercicio2.Animal;
-import exercicios.herancaepolimorfismo.exercicio2.Cachorro;
-import exercicios.herancaepolimorfismo.exercicio2.Gato;
+import com.desenvolve.tech.exercicios.base.herancaepolimorfismo.exercicio2.Cachorro;
+import com.desenvolve.tech.exercicios.base.herancaepolimorfismo.exercicio2.Gato;
 
 public class AnimalTeste {
 

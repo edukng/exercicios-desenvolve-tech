@@ -1,6 +1,6 @@
 package com.desenvolve.tech;
 
-import exercicios.herancaepolimorfismo.exercicio3.Ingresso;
+import com.desenvolve.tech.exercicios.base.herancaepolimorfismo.exercicio3.Ingresso;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class IngressoTeste {
         System.out.println("Escolha o tipo de ingresso: \n1- Ingresso Normal \n2- Ingresso VIP");
 
         if(entrada.nextInt() == 1){
-            ingresso.
+
         }
     }
 }

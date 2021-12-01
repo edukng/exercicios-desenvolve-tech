@@ -1,8 +1,8 @@
 package com.desenvolve.tech;
 
-import exercicios.herancaepolimorfismo.exercicio1.Assistente;
-import exercicios.herancaepolimorfismo.exercicio1.Funcionario;
-import exercicios.herancaepolimorfismo.exercicio1.Tecnico;
+import com.desenvolve.tech.exercicios.base.herancaepolimorfismo.exercicio1.Assistente;
+import com.desenvolve.tech.exercicios.base.herancaepolimorfismo.exercicio1.Funcionario;
+import com.desenvolve.tech.exercicios.base.herancaepolimorfismo.exercicio1.Tecnico;
 
 public class FuncionarioTeste {
 
