@@ -2,7 +2,11 @@ package com.desenvolve.tech.exercicios.web.imoveis.controller;
 
 import com.desenvolve.tech.exercicios.web.imoveis.entity.Imovel;
 import com.desenvolve.tech.exercicios.web.imoveis.entity.Usuario;
-import com.desenvolve.tech.exercicios.web.imoveis.service.CadastroImovel;
+import com.desenvolve.tech.exercicios.web.imoveis.repository.ImoveisRepository;
+import com.desenvolve.tech.exercicios.web.imoveis.service.ImovelService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,16 +15,16 @@ import java.util.List;
 @RequestMapping("/imoveis")
 public class ImovelController {
 
-    CadastroImovel imoveis = new CadastroImovel();
+    @Autowired
+    ImovelService imoveis;
 
-    @GetMapping("/todosimoveis")
+    @GetMapping()
     public List<Imovel> imoveis() {
-        return imoveis.getImoveis();
+        return imoveis.bancoDeImoveis();
     }
 
     @PostMapping("/cadastra")
-    public void cadastro(@RequestBody Imovel imovel, Usuario usuario) {
-        CadastroImovel novoImovel = new CadastroImovel();
-        novoImovel.cadastraImovel(imovel, usuario);
+    public ResponseEntity<Imovel> cadastraImovel(@RequestBody Imovel casa){
+        return new ResponseEntity<>(imoveis.novoImovel(casa), HttpStatus.CREATED);
     }
 }

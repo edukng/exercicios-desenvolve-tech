@@ -1,49 +1,27 @@
 package com.desenvolve.tech.exercicios.web.imoveis.entity;
 
-public class Imovel {
+import com.desenvolve.tech.exercicios.web.imoveis.model.TipoDeImovel;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "imovel")
+public class Imovel implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private String nomeDoImovel;
     private TipoDeImovel tipoImovel;
     private String cidade;
     private float valor;
-
-    public Imovel() {}
-
-    public Imovel(String nomeDoImovel, TipoDeImovel tipoImovel, String cidade, float valor) {
-        this.nomeDoImovel = nomeDoImovel;
-        this.tipoImovel = tipoImovel;
-        this.cidade = cidade;
-        this.valor = valor;
-    }
-
-    public String getNomeDoImovel() {
-        return nomeDoImovel;
-    }
-
-    public void setNomeDoImovel(String nomeDoImovel) {
-        this.nomeDoImovel = nomeDoImovel;
-    }
-
-    public TipoDeImovel getTipoImovel() {
-        return tipoImovel;
-    }
-
-    public void setTipoImovel(TipoDeImovel tipoImovel) {
-        this.tipoImovel = tipoImovel;
-    }
-
-    public String getCidade() {
-        return cidade;
-    }
-
-    public void setCidade(String cidade) {
-        this.cidade = cidade;
-    }
-
-    public float getValor() {
-        return valor;
-    }
-
-    public void setValor(float valor) {
-        this.valor = valor;
-    }
 }

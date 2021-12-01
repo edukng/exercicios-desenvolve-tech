@@ -1,4 +1,4 @@
-package com.desenvolve.tech.exercicios.web.security.model;
+package com.desenvolve.tech.exercicios.web.springsecurity.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,9 +11,11 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student {
+public class Course {
     private String id;
     private String name;
     private String description;
-    private List<Course> courses;
+    private List<String> steps;
+
+
 }

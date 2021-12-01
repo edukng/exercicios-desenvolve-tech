@@ -1,39 +1,26 @@
 package com.desenvolve.tech.exercicios.web.imoveis.entity;
 
-public class Usuario {
-    private String login;
+import com.desenvolve.tech.exercicios.web.imoveis.model.TipoDeUsuario;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "usuario")
+public class Usuario implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    private String email;
     private String senha;
     private TipoDeUsuario tipo;
-
-    public Usuario() {}
-
-    public Usuario(String login, String senha, TipoDeUsuario tipo) {
-        this.login = login;
-        this.senha = senha;
-        this.tipo = tipo;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-    public TipoDeUsuario getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(TipoDeUsuario tipo) {
-        this.tipo = tipo;
-    }
 }

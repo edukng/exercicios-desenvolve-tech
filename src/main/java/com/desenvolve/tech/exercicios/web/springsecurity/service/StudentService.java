@@ -1,7 +1,7 @@
-package com.desenvolve.tech.exercicios.web.security.service;
+package com.desenvolve.tech.exercicios.web.springsecurity.service;
 
-import com.desenvolve.tech.exercicios.web.security.model.Course;
-import com.desenvolve.tech.exercicios.web.security.model.Student;
+import com.desenvolve.tech.exercicios.web.springsecurity.model.Course;
+import com.desenvolve.tech.exercicios.web.springsecurity.model.Student;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
